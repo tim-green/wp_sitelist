@@ -1,11 +1,11 @@
 {
-  "name": "groundctrl-sass",
+  "name": "wp_sitelist",
   "version": "1.0.0",
-  "description": "A Sass starter",
+  "description": "A theme to show sites within a WP multisite",
   "author": "Tim Green",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tim-green/groundctrl-sass-starter"
+    "url": "https://github.com/tim-green/wp_sitelist"
   },
   "scripts": {
     "watch": "grunt watch"
@@ -27,8 +27,5 @@
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^9.0.0",
-    "pixrem": "^5.0.0",
-    "popper.js": "^1.16.1",
-    "postcss": "^8.4.27"
   }
 }
