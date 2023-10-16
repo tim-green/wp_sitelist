@@ -18,10 +18,13 @@
 /*
 
  modules
+ Normalize Import
 
 */
 
+@import "normalize";
 
+/* modules*/
 @import "modules/mixins";
 @import "modules/variables";
 
