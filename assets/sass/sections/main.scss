@@ -1,14 +1,111 @@
 /*
 
   Main
-  +
+  + Site list
 
 */
 
-.main{
-  padding: 0 30px;
-}
+.site {
 
-.main-success{
-  color: $white;
+	$gap : 1.95em;
+
+	&s {
+		display: flex;
+		gap: $gap;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 2%;
+		margin: 0 auto;
+		list-style: none;
+	}
+
+	position: relative;
+	width: 240px;
+	max-width: 20em;
+	padding: $gap;
+	background: var(--colour-bg-site);
+	border-color: var(--colour-bd-red-site);
+	border-radius: .25em;
+	overflow: hidden;
+	transition: all .3s;
+  box-shadow: 0 .5em 1.5em rgba( #000, .66 );
+  // filter:grayscale(1);
+
+	&:hover {
+		box-shadow: 0 .5em 1.5em rgba( #000, .66 );
+		transform: scale(1.25);
+    // filter:grayscale(0);
+		z-index: 100;
+	}
+
+	// &.is-alt {
+	// }
+
+		&.is-archived {
+			--colour-bg-link-admin: #{ rgba( #000, .2 ) };
+      // display: none;
+			&:not(:hover) {
+				opacity: .25;
+			}
+		}
+
+		&.is-mature {
+			--colour-bg-site: var(--colour-bg-site-alt);
+			--colour-h-site: var(--colour-h-site-alt);
+			--colour-txt-site: var(--colour-txt-site-alt);
+			--colour-bd-site: var(--colour-bd-site-alt);
+			--colour-underline: var(--colour-underline-alt);
+		}
+
+	&-image {
+		margin: -$gap;
+		margin-bottom: $gap;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		transition: opacity .3s;
+	}
+
+	&-title {
+		margin: 0;
+		font-size: 1em;
+		font-weight: 700;
+		color: var(--colour-h-site);
+
+		small {
+			display: block;
+			// text-transform: uppercase;
+			font-size: .66em;
+			font-weight: 400;
+			color: var(--colour-txt-site);
+		}
+	}
+
+	.link-admin {
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		right: -30%;
+		top: 0;
+		text-decoration: none;
+		background: var(--colour-bg-link-admin);
+		color: #fff;
+		border-radius: 0 .25em 0 0;
+		backdrop-filter: blur( 5px );
+		transition: right .3s;
+		transition-delay: .2s;
+
+		span {
+			position: absolute;
+			left: .5em;
+			bottom: 0;
+			text-transform: uppercase;
+			letter-spacing: .15em;
+			transform: rotate( -90deg );
+			transform-origin: 0 0;
+		}
+	}
+
+	&:hover .link-admin {
+		right: -10%;
+	}
 }
