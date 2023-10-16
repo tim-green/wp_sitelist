@@ -2,16 +2,16 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    jshint: {
-      // options: {
-      //   jshintrc: '.jshintrc'
-      // },
-      all: [
-        '!Gruntfile.js',
-        '!assets/js/**/*.js',
-        '!assets/build/app.min.js'
-      ]
-    },
+    // jshint: {
+    //   // options: {
+    //   //   jshintrc: '.jshintrc'
+    //   // },
+    //   all: [
+    //     '!Gruntfile.js',
+    //     '!assets/js/**/*.js',
+    //     '!assets/build/app.min.js'
+    //   ]
+    // },
     sass: {
       dist: {
         options: {
@@ -26,19 +26,19 @@ module.exports = function(grunt) {
         }
       }
     },
-    uglify: {
-      dist: {
-        files: {
-          'assets/build/app.min.js': [
-            'assets/js/vendor/*.js','assets/js/plugins/*.js','assets/js/**/*.js'
-          ]
-        },
-        options: {
-          sourceMap: 'assets/build/app.min.js.map',
-          sourceMappingURL: '/assets/build/app.min.js.map'
-        }
-      }
-    },
+    // uglify: {
+    //   dist: {
+    //     files: {
+    //       'assets/build/app.min.js': [
+    //         'assets/js/vendor/*.js','assets/js/plugins/*.js','assets/js/**/*.js'
+    //       ]
+    //     },
+    //     options: {
+    //       sourceMap: 'assets/build/app.min.js.map',
+    //       sourceMappingURL: '/assets/build/app.min.js.map'
+    //     }
+    //   }
+    // },
     watch: {
       options: {
         livereload: true
