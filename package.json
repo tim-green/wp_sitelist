@@ -1,0 +1,38 @@
+{
+  "name": "groundctrl-sass",
+  "version": "1.0.0",
+  "description": "A Sass starter",
+  "author": "Tim Green",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tim-green/groundctrl-sass-starter"
+  },
+  "scripts": {
+    "watch": "grunt watch"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "livereload": "^0.9.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "bootstrap": "5.3.1",
+    "cssnano": "^6.0.1",
+    "grunt": "^1.6.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.1.0",
+    "jquery": ">=3.7.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "pixrem": "^5.0.0",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.4.27"
+  }
+}

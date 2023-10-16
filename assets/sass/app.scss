@@ -1,0 +1,67 @@
+/*!
+  This is the core import file for GroundCTRL Framework
+  WP Framework by TimGreen
+  Section the Sass stylesheets 
+  according to the below structure for a nice flow.
+
+*/
+
+
+/*
+
+ Bootstrap Import
+
+*/
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*
+
+ modules
+
+*/
+
+
+@import "modules/mixins";
+@import "modules/variables";
+
+@import "modules/base";
+@import "modules/typography";
+//@import "modules/wp-default";
+//@import "modules/themes";
+
+/*
+
+ Plugins
+
+*/
+
+
+
+/*
+
+ Components
+
+*/
+
+@import "components/backtotop";
+@import "components/comments";
+@import "components/homepage";
+@import "components/sidebar";
+
+/*
+
+ Sections
+
+*/
+
+@import "sections/header";
+@import "sections/main";
+@import "sections/footer";
+
+
+/*
+
+ Pages
+
+*/
