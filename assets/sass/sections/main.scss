@@ -14,7 +14,7 @@
 		gap: $gap;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 2%;
+		padding: 4% 2%;
 		margin: 0 auto;
 		list-style: none;
 	}
@@ -43,7 +43,7 @@
 
 		&.is-archived {
 			--colour-bg-link-admin: #{ rgba( #000, .2 ) };
-      // display: none;
+      		display: none;
 			&:not(:hover) {
 				opacity: .25;
 			}
@@ -70,13 +70,18 @@
 		font-size: 1em;
 		font-weight: 700;
 		color: var(--colour-h-site);
-
+		&:hover{
+			color: var(--colour-bd-red-site);
+			transition: ease-in-out 300ms color;
+			text-decoration-color: var(--colour-h);
+		}
 		small {
 			display: block;
 			// text-transform: uppercase;
 			font-size: .66em;
 			font-weight: 400;
 			color: var(--colour-txt-site);
+			text-transform: uppercase;
 		}
 	}
 

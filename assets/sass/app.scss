@@ -13,13 +13,13 @@
 
 */
 
-@import "normalize";
+@forward "normalize";
 
 /* modules*/
-@import "modules/mixins";
-@import "modules/variables";
+@forward "modules/mixins";
+@forward "modules/variables";
 
-@import "modules/base";
-@import "modules/typography";
-//@import "modules/themes";
-@import "sections/main";
+@forward "modules/base";
+@forward "modules/typography";
+//@forward "modules/themes";
+@forward "sections/main";
