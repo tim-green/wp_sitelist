@@ -102,6 +102,7 @@ class SiteLIst{
 		$args_sites = array(
 			'site__not_in' => array( 1 ),
 			'public'       => 1,
+         'orderby'      => 'name',
 			'order'        => 'DESC',
 			);
 
@@ -129,9 +130,8 @@ class SiteLIst{
 				$output_single  = '<li class="site ' . esc_attr( $class ) . '">';
 				$output_single .= '<a href="' . esc_url( $site->siteurl ) . '">';
 				$output_single .= '<div class="site-image"><img src="' . esc_url( $theme['screenshot'] ) . '" alt="' . esc_attr( $theme['name'] ) . ' Theme Demo Website" /></div>';
-				$output_single .= '<h2 class="site-title" title="' . esc_attr( $theme['name'] ) . ' WP Themes">' . $site->blogname . ' <small>' . $theme['name'] . ' Themes</small></h2>';
+				$output_single .= '<h2 class="site-title" title="' . esc_attr( $theme['name'] ) . ' WP Themes">' . $site->blogname . ' <small>WordPress Theme</small></h2>';
 				$output_single .= '</a>';
-
 			// Admin link.
 			if ( current_user_can( 'edit_theme_options' ) ) {
 					$output_single .= '<a href="' . esc_url( get_admin_url( $site->blog_id, 'edit.php?post_type=page' ) ) . '" class="link-admin">';
