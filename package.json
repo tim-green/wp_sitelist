@@ -8,13 +8,6 @@
     "url": "https://github.com/tim-green/wp_sitelist"
   },
   "scripts": {
-    "watch": "grunt watch"
-  },
-  "dependencies": {
-    "grunt-contrib-clean": "^2.0.1",
-    "grunt-contrib-sass": "^2.0.0",
-    "livereload": "^0.9.3",
-    "normalize-scss": "^7.0.1"
   },
   "devDependencies": {
     "grunt": "^1.6.1",
