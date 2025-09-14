@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-// Get the main.js where all your JavaScript files are imported
+// Get the app.js where all your JavaScript files are imported
 const JS_FILE = resolve('assets/js/app.js')
 
 // Define where the compiled and minified JavaScript files will be saved
