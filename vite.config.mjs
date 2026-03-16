@@ -6,7 +6,7 @@ import { resolve } from 'path';
 const JS_FILE = resolve('assets/js/app.js')
 
 // Define where the compiled and minified JavaScript files will be saved
-const BUILD_DIR = resolve(__dirname, 'assets/build/');
+const BUILD_DIR = resolve(__dirname, 'build/');
 
 export default defineConfig({
   build: {
