@@ -10,7 +10,7 @@
 
 
 include( 'includes/tha-theme-hooks.php' ); 
-wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/app.min.css', false,'all' ); 
+wp_enqueue_style( 'main', get_template_directory_uri() . '/build/app.min.css', false,'all' ); 
 
 
 class SiteLIst{
