@@ -24,9 +24,7 @@ html {
 * {
   border-color: inherit;
 
-  &,
-  &::before,
-  &::after {
+  &, &::before, &::after {
     box-sizing: inherit;
   }
 }
