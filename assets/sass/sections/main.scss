@@ -8,7 +8,6 @@
 .site {
 
 	$gap : 1.95em;
-
 	&s {
 		display: flex;
 		gap: $gap;
@@ -28,21 +27,20 @@
 	border-radius: .25em;
 	overflow: hidden;
 	transition: all .3s;
-  box-shadow: 0 .5em 1.5em rgba( #000, .66 );
-  // filter:grayscale(1);
+  	box-shadow: 0 .5em 1.5em rgba( #000, .66 );
 
 	&:hover {
 		box-shadow: 0 .5em 1.5em rgba( #000, .66 );
-		transform: scale(1.25);
-    // filter:grayscale(0);
+		transform: scale(1.08);
 		z-index: 100;
+		// border: 2px solid var(--colour-bd-red-site);
 	}
 
 	// &.is-alt {
 	// }
 
 		&.is-archived {
-			--colour-bg-link-admin: #{ rgba( #000, .2 ) };
+			--colour-bg-link-admin: #{ rgba( #191919, .2 ) };
       		display: none;
 			&:not(:hover) {
 				opacity: .25;
@@ -79,9 +77,10 @@
 			display: block;
 			// text-transform: uppercase;
 			font-size: .66em;
-			font-weight: 400;
+			font-weight: 800;
 			color: var(--colour-txt-site);
 			text-transform: uppercase;
+			padding-top: 4px;
 		}
 	}
 
